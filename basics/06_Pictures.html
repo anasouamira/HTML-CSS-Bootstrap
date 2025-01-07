@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Picture Example</title>
+    <!-- The <title> defines the title of the web page, which is displayed in the browser tab -->
+</head>
+<body>
+    <!-- The <picture> element allows serving different images based on screen width -->
+    <picture>
+        <!-- This source is for screens 1920px or wider -->
+        <source media="(min-width: 1920px)" srcset="ofppt.png">
+        <!-- This source is for screens between 1600px and 1919px -->
+        <source media="(min-width: 1600px)" srcset="ofppt.png">
+        <!-- This source is for screens between 600px and 1599px -->
+        <source media="(min-width: 600px)" srcset="ofppt.png">
+        <!-- The <img> element provides a default image if none of the conditions above are met -->
+        <img src="ofppt.png" alt="Responsive OFPPT logo">
+    </picture>
+</body>
+</html>
