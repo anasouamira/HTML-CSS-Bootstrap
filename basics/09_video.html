@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document. UTF-8 supports most characters. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the webpage is responsive by setting the viewport to match the device's width. -->
+
+    <title>Video Example</title>
+    <!-- Defines the title of the web page, which is displayed in the browser tab. -->
+</head>
+<body>
+    <!-- The <video> element is used to embed a video file in the web page -->
+    <video 
+        src="../assets/media/video1.mp4" 
+        controls 
+        poster="ofppt.png" 
+        width="600" 
+        height="400"
+        autoplay
+        loop
+    >
+        <!-- The 'src' attribute specifies the path to the video file. -->
+        <!-- The 'controls' attribute enables playback controls like play, pause, and volume. -->
+        <!-- The 'poster' attribute specifies an image to display while the video is loading or if it fails to load. -->
+        <!-- The 'width' and 'height' attributes define the dimensions of the video player. -->
+        <!-- The 'autoplay' attribute makes the video play automatically when the page loads. -->
+        <!-- The 'loop' attribute ensures the video plays in a continuous loop. -->
+
+        <!-- Fallback content for browsers that do not support the <video> element -->
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The charset specifies the character encoding for the document. UTF-8 supports most characters. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag makes the web page responsive by adjusting its layout based on the screen size. -->
+
+    <title>Responsive Picture Example</title>
+    <!-- The <title> defines the title of the web page, which appears in the browser tab. -->
+</head>
+<body>
+    <!-- Start of the picture element for responsive images -->
+    <picture>
+        <!-- This image is displayed for screens 1920px or wider -->
+        <source media="(min-width: 1920px)" srcset="ofppt.png">
+        
+        <!-- This image is displayed for screens between 1600px and 1919px -->
+        <source media="(min-width: 1600px)" srcset="ofppt.png">
+        
+        <!-- This image is displayed for screens between 600px and 1599px -->
+        <source media="(min-width: 600px)" srcset="ofppt.png">
+        
+        <!-- The fallback image is displayed if no media queries are matched -->
+        <img src="ofppt.png" alt="Responsive OFPPT logo">
+        <!-- The alt attribute improves accessibility and provides a description if the image cannot be loaded. -->
+    </picture>
+    <!-- End of the picture element -->
+</body>
+</html>

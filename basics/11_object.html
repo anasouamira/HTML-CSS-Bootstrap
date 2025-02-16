@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document. UTF-8 supports most characters. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the webpage is responsive by setting the viewport to match the device's width. -->
+
+    <title>PDF Document Embed</title>
+    <!-- Defines the title of the web page, which is displayed in the browser tab. -->
+</head>
+<body>
+    <!-- Embedding a PDF document using the <object> element -->
+    <object 
+        data="../assets/media/document1.pdf" 
+        type="application/pdf" 
+        width="1000" 
+        height="700">
+        <!-- Attributes explained:
+            - data: Specifies the path to the PDF document.
+            - type: Indicates the MIME type of the embedded content (in this case, a PDF document).
+            - width and height: Define the dimensions of the embedded object in pixels.
+        -->
+        <!-- Fallback content for browsers that do not support the <object> element -->
+        Your browser does not support displaying PDF documents. 
+        <a href="../assets/media/document1.pdf" target="_blank">Click here to download the PDF.</a>
+        <!-- Provides a link to download or open the PDF if embedding is not supported. -->
+    </object>
+</body>
+</html>
