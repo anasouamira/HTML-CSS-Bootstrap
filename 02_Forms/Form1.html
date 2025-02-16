@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start of the form -->
+    <form action="#" method="post">
+        <!-- Search field -->
+        <input type="search" placeholder="Rechercher..."> <br>
+        
+        <!-- Text input for last name -->
+        <label for="nom">Nom</label>
+        <input type="text" required name="nom" id="nom" maxlength="6"> <br>
+
+        <!-- Text input for first name -->
+        <label for="prenom">Prénom</label>
+        <input type="text" required placeholder="Votre prénom" name="prenom" id="prenom"> <br>
+
+        <!-- Date of birth input -->
+        <label for="date_naissance">Date de naissance</label>
+        <input type="date" name="date_naissance" id="date_naissance"> <br>
+
+        <!-- Phone number input -->
+        <label for="telephone">Téléphone</label>
+        <input type="tel" name="telephone" id="telephone" pattern="\d{10}" placeholder="0612345678"> <br>
+
+        <!-- Password input -->
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password"> <br>
+
+        <!-- File upload input -->
+        <label for="photo">Photo</label>
+        <input type="file" name="photo" id="photo"> <br>
+
+        <!-- Range slider -->
+        <label for="taille">Taille (10 à 30)</label>
+        <input type="range" name="taille" id="taille" min="10" max="30"> <br>
+
+        <!-- Color picker -->
+        <label for="couleur">Couleur favorite</label>
+        <input type="color" name="couleur" id="couleur"> <br>
+
+        <!-- Submit and reset buttons -->
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser"> <br>
+
+        <!-- Checkbox group for programming languages -->
+        <label>Langages préférés :</label> <br>
+        <input type="checkbox" name="langages[]" value="html" checked> HTML 
+        <input type="checkbox" name="langages[]" value="python"> Python
+        <input type="checkbox" name="langages[]" value="javascript" checked> JavaScript 
+        <input type="checkbox" name="langages[]" value="php"> PHP 
+        <br>
+
+        <!-- Radio buttons for gender -->
+        <label>Genre :</label> <br>
+        <input type="radio" name="genre" value="F" checked> Féminin 
+        <input type="radio" name="genre" value="M"> Masculin 
+        <br>
+
+        <!-- Textarea for description -->
+        <label for="description">Description :</label>
+        <textarea name="description" id="description" rows="4" cols="50">Texte de départ</textarea> <br>
+
+        <!-- Dropdown menu for city selection -->
+        <label for="ville">Ville :</label>
+        <select name="ville" id="ville">
+            <option value="khenifra">Khénifra</option>
+            <option value="rabat">Rabat</option>
+            <option value="casablanca">Casablanca</option>
+            <option value="marrakech">Marrakech</option>
+        </select> <br>
+
+        <!-- Button with no form submission -->
+        <input type="button" value="Cliquez ici"> <br>
+
+        <!-- Number input with step value -->
+        <label for="quantite">Quantité (0 à 1000, par pas de 30)</label>
+        <input type="number" name="quantite" id="quantite" value="0" min="0" max="1000" step="30"> <br>
+
+        <!-- Datalist for predefined options -->
+        <label for="niveau">Niveau :</label>
+        <input type="text" id="niveau" list="niveaux">
+        <datalist id="niveaux">
+            <option value="TS">
+            <option value="T">
+            <option value="Q">
+            <option value="S">
+        </datalist>
+    </form>
+    <!-- End of the form -->
+</body>
+</html>
