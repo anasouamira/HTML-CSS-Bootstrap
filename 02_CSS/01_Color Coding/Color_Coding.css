@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.named-color {
+    background-color: red;
+}
+
+.hex-color {
+    background-color: #FF5733;
+}
+
+.rgb-color {
+    background-color: rgb(50, 150, 250);
+}
+
+.rgba-color {
+    background-color: rgba(50, 150, 250, 0.5);
+    color: black;
+}
+
+.hsl-color {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.hsla-color {
+    background-color: hsla(120, 100%, 50%, 0.5);
+    color: black;
+}
