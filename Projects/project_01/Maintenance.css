@@ -1,0 +1,269 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+#Home
+{
+    height: 75vh;
+    background: rgb(196, 225, 250);
+}
+#Home header
+{
+    height: 5%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Home header span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 20px;
+}
+#Home header span i
+{
+    color: orange;
+}
+#Home header span p
+{
+    color: aliceblue;
+    font-size: 16px;
+    margin-left: 5px;
+}
+#Home nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+#Home nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#Home nav ul li , h2
+{
+    list-style: none;
+    margin:0 15px ;
+    margin-top: 10px;
+    color: rgb(17, 139, 240);
+    transition: all .2s ease-in-out;
+}
+#Home nav ul li a
+{
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+#Home nav ul li:hover
+{
+    transform: scale(1.2);
+}
+#Home nav ul li a:hover
+{
+    color: deepskyblue;
+    border-bottom: 2px solid rgb(43, 41, 41);
+}
+
+#Home .Content
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30rem;
+}
+#Home .Content .Content_Txt h1 
+{
+    width: 40%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: rgb(17, 139, 240);
+}
+#Home .Content .Content_Txt p , #AfterAbout .Content P
+{
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+#Home .Content .Content_Txt a , #AfterAbout .Content a
+{
+    text-decoration: none;
+    padding:10px 30px ;
+    border-radius: 6px;
+    color: aliceblue;
+    background: orange;
+    transition: all .2s ease-in-out;
+}
+#Home .Content .Content_Txt a:hover
+{
+    color: orange;
+    background: rgb(184, 220, 252);
+}
+
+#Home .Packs
+{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#Home .Packs .Repair, .Maintain
+{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: rgb(151, 130, 151);
+    box-shadow: 2px 2px 10px 2px silver;
+    border-radius: 5px;
+    transform: translateY(-80px);
+    transition:all .3s ease-in-out;
+}
+#Home .Packs .Improve
+{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    color: aliceblue;
+    box-shadow: 2px 2px 10px 2px silver;
+    border-radius: 5px;
+    transform: translateY(-80px);
+    transition:all .3s ease-in-out;
+}
+#Home .Packs .Repair:hover
+{
+    background: rgb(151, 130, 151);
+    color: aliceblue;
+    box-shadow: none;
+    transform: translateY(-100px) scale(1.1);
+}
+#Home .Packs .Improve:hover
+{
+    background: aliceblue;
+    color: orange;
+    box-shadow: none;
+    transform: translateY(-100px) scale(1.1);
+}
+#Home .Packs .Maintain:hover
+{
+    background: rgb(151, 130, 151);
+    color: aliceblue;
+    box-shadow: none;
+    transform: translateY(-100px) scale(1.1);
+}
+#Home .Packs i
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#Home .Packs span
+{
+    font-size: 20px;
+}
+#About
+{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#About .Content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30rem;
+    margin-top: 180px;
+}
+#About .Content h1
+{
+    width: 40%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+#About .Content p
+{
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+#About .Content a
+{
+    text-decoration: none;
+    padding:10px 30px ;
+    border-radius: 6px;
+    color: aliceblue;
+    background: deepskyblue;
+    transition: all .2s ease-in-out;
+}
+#About .Content a:hover
+{
+    color: deepskyblue;
+    background:rgb(213, 231, 247) ;
+}
+#About .Content .Employee_Pic
+{
+    width: 44%;
+}
+#About .Content .Employee_Pic img
+{
+    width: 500px;
+    height: 350px;
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+#About .Content .Employee_Pic img:hover
+{
+    opacity: 1;
+}
+
+#AfterAbout
+{
+    height:65vh;
+    background: rgb(196, 225, 250);
+    padding-top: 100px;
+}
+#AfterAbout .Content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto 27rem;
+}
+#AfterAbout .Content .Content_Txt h1
+{
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: rgb(17, 139, 240);
+}
