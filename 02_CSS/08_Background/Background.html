@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Shorthand Example</title>
+    <style>
+        /* Using background shorthand */
+        .box {
+            width: 400px;
+            height: 300px;
+            background: url('https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg') no-repeat center center / cover; /* Set background image, no repeat, center position, and cover the area */
+            border: 2px solid darkblue;
+            margin: 50px auto;
+        }
+
+        /* Set background color for the body */
+        body {
+            background: lightgray; /* Light gray background for the entire page */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set background for a paragraph */
+        p {
+            background: yellow url('https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg') no-repeat right center; /* Yellow background with an image on the right side */
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This box has a background image.
+    </div>
+
+    <p>
+        This paragraph has a yellow background with an image on the right side.
+    </p>
+</body>
+</html>

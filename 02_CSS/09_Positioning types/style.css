@@ -1,0 +1,59 @@
+        /* Relative positioning */
+        .relative-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            position: relative;
+            top: 50px; /* Moves the element 30px down from its normal position */
+            left: 300px; /* Moves the element 50px to the right */
+            border: 2px solid darkblue;
+            margin-bottom: 20px;
+        }
+
+        /* Absolute positioning */
+        .absolute-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            position: absolute;
+            top: 150px; /* Positioning it 150px from the top of the document */
+            left: 300px; /* Positioning it 50px from the left */
+            border: 2px solid darkblue;
+        }
+
+        /* Fixed positioning */
+        .fixed-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            position: fixed;
+            bottom: 0; /* Sticks to the bottom of the viewport */
+            left: 0; /* Sticks to the left side */
+            border: 2px solid darkblue;
+        }
+
+        /* Sticky positioning */
+        .sticky-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightyellow;
+            position: sticky;
+            top: 20px; /* The element will become "fixed" after scrolling 20px down */
+            border: 2px solid darkblue;
+        }
+
+        /* Floating element */
+        .float-box {
+            width: 150px;
+            height: 100px;
+            background-color: lightpink;
+            float: left; /* Floats the element to the left */
+            margin-right: 20px;
+            border: 2px solid darkblue;
+        }
+
+        /* For wrapping text around the float */
+        .content {
+            width: 400px;
+            font-size: 18px;
+        }
