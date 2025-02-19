@@ -44,7 +44,7 @@ html
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5rem;
+    margin: 0 3rem;
 }
 #Home nav ul
 {
@@ -85,7 +85,7 @@ html
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 30rem;
+    margin: auto 20rem;
 }
 #Home .Content .Content_Txt h1 
 {
@@ -101,7 +101,7 @@ html
     letter-spacing: 1px;
     line-height: 1.4;
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 #Home .Content .Content_Txt a , #AfterAbout .Content a
 {
@@ -117,7 +117,10 @@ html
     color: orange;
     background: rgb(184, 220, 252);
 }
-
+#Home .Employee_Pic img
+{
+    height: 500px;
+}
 #Home .Packs
 {
     display: flex;
@@ -127,7 +130,7 @@ html
 }
 #Home .Packs .Repair, .Maintain
 {
-    width: 350px;
+    width: 300px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -142,7 +145,7 @@ html
 }
 #Home .Packs .Improve
 {
-    width: 350px;
+    width: 300px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -187,7 +190,7 @@ html
 }
 #About
 {
-    height: 70vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;

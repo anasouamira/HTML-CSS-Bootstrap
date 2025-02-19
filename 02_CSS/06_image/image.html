@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in CSS Example</title>
+    <style>
+        /* Applying image as background */
+        .background-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg');
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image */
+            border: 2px solid darkblue;
+        }
+
+        /* Styling the image element */
+        img {
+            width: 100%;
+            height: auto; /* Keeps the aspect ratio of the image */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <!-- This div uses a background image -->
+    </div>
+
+    <br>
+
+    <img src="https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg" alt="Sample Image">
+    <!-- This image element is styled in CSS -->
+</body>
+</html>
