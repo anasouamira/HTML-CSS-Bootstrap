@@ -1,0 +1,99 @@
+/* Flex container */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between items */
+    height: 400px; /* Set height of container */
+    border: 2px solid darkblue;
+    padding: 20px;
+}
+
+/* Flex item */
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border: 2px solid darkblue;
+    color: white;
+    font-size: 18px;
+}
+
+/* Specific item alignment */
+.box:nth-child(1) {
+    background-color: lightgreen;
+}
+.box:nth-child(2) {
+    background-color: lightblue;
+}
+.box:nth-child(3) {
+    background-color: lightyellow;
+}
+.box:nth-child(4) {
+    background-color: lightpink;
+}
+
+/* Example 2: Row direction with space-around */
+.example-2 {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: flex-start; /* Align items to the top of the container */
+    height: 200px;
+    border: 2px solid darkblue;
+    padding: 20px;
+}
+
+/* Example 3: Column direction */
+.example-3 {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically in column */
+    align-items: center; /* Center items horizontally */
+    height: 300px;
+    border: 2px solid darkblue;
+    padding: 20px;
+}
+
+/* Example 4: Justify content with space-evenly */
+.example-4 {
+    display: flex;
+    justify-content: space-evenly; /* Distribute items evenly with equal space around them */
+    align-items: center;
+    height: 200px;
+    border: 2px solid darkblue;
+    padding: 20px;
+}
+
+/* Example 5: Flex grow (flexible sizing) */
+.example-5 {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    border: 2px solid darkblue;
+    padding: 20px;
+}
+
+.box-grow {
+    flex-grow: 1; /* Allow this box to grow and take available space */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkblue;
+    color: white;
+    font-size: 18px;
+}
+
+.box-grow:nth-child(1) {
+    background-color: lightcoral;
+}
+.box-grow:nth-child(2) {
+    background-color: lightgreen;
+}
+.box-grow:nth-child(3) {
+    background-color: lightblue;
+}
