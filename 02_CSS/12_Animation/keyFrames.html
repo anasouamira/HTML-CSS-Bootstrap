@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframes Example</title>
+    <style>
+        /* Define the animation */
+        @keyframes moveSide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Apply animation to the box */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: relative;
+            animation: moveSide 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
