@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Typography & Links</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--
+    1- Headings (h1 - h6): Standard heading sizes.
+    2- Display Headings (display-*): Larger, bolder headings for emphasis.
+    3- Text Styles:
+        .lead → Makes text stand out.
+        .text-muted → Lighter color text.
+        .text-danger, .text-success, etc. → Color-coded messages.
+    4- Blockquote: A quote section with .blockquote and .blockquote-footer.
+    5- Lists:
+        .list-unstyled → Removes default bullets.
+        .list-inline → Displays items in a row.
+    6 Links:
+        .text-primary → Blue link.
+        .text-danger → Red link.
+        .text-success → Green link.
+    -->
+
+<div class="container mt-4">
+    <h1 class="text-primary">Bootstrap Typography & Links</h1>
+    
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Display Headings (Larger & Bolder) -->
+    <h1 class="display-1">Display 1</h1>
+    <h2 class="display-2">Display 2</h2>
+    <h3 class="display-3">Display 3</h3>
+
+    <!-- Paragraphs & Text Styling -->
+    <p class="lead">This is a lead paragraph. It stands out more than regular text.</p>
+    <p>This is a normal paragraph with <strong>bold</strong> and <em>italic</em> text.</p>
+    <p class="text-muted">This is a muted paragraph, often used for less important text.</p>
+    <p class="text-danger">This is a danger message (red text).</p>
+    <p class="text-success">This is a success message (green text).</p>
+
+    <!-- Blockquote -->
+    <blockquote class="blockquote">
+        <p>"This is a blockquote. Use it to highlight quotes."</p>
+        <footer class="blockquote-footer">Author Name</footer>
+    </blockquote>
+
+    <!-- Lists -->
+    <ul class="list-unstyled">
+        <li>Item without bullets</li>
+        <li>Another item</li>
+    </ul>
+
+    <ol class="list-inline">
+        <li class="list-inline-item">Inline Item 1</li>
+        <li class="list-inline-item">Inline Item 2</li>
+    </ol>
+
+    <!-- Links -->
+    <p>Visit <a href="#" class="text-primary">Bootstrap Docs</a> for more details.</p>
+    <p><a href="#" class="text-danger">Danger Link</a></p>
+    <p><a href="#" class="text-warning">Warning Link</a></p>
+    <p><a href="#" class="text-success">Success Link</a></p>
+
+</div>
+
+<!-- Link Bootstrap JavaScript (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
