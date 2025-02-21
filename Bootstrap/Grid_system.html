@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    .container: Wraps the grid for better alignment.
+    .row: Creates a horizontal row.
+    .col-md-*: Defines column widths for medium (md) screens and above.
+    .col-sm-* / .col-lg-*: Makes columns responsive for different screen sizes.
+    Background colors (bg-*) and padding (p-3) improve visibility.
+-->
+
+    <div class="container">
+        <h2 class="text-center mt-4">Bootstrap Grid System</h2>
+
+        <!-- Row with three equal columns -->
+        <div class="row">
+            <!-- Each column takes up 4 out of 12 columns (equal width) -->
+            <div class="col-md-4 bg-primary text-white p-3">Column 1</div>
+            <div class="col-md-4 bg-success text-white p-3">Column 2</div>
+            <div class="col-md-4 bg-danger text-white p-3">Column 3</div>
+        </div>
+
+        <!-- Row with different column sizes -->
+        <div class="row mt-3">
+            <!-- First column takes 6 out of 12 columns (half of the row) -->
+            <div class="col-md-6 bg-warning text-dark p-3">Column 1 (6 columns)</div>
+            <!-- Second and third columns take 3 out of 12 columns each -->
+            <div class="col-md-3 bg-info text-white p-3">Column 2 (3 columns)</div>
+            <div class="col-md-3 bg-dark text-white p-3">Column 3 (3 columns)</div>
+        </div>
+
+        <!-- Responsive columns -->
+        <div class="row mt-3">
+            <!-- These columns adjust based on screen size -->
+            <div class="col-sm-12 col-md-6 col-lg-3 bg-secondary text-white p-3">
+                <!-- Full width on small screens, half width on medium, quarter width on large -->
+                Responsive Column
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 bg-light text-dark p-3">
+                Responsive Column
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 bg-primary text-white p-3">
+                Responsive Column
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 bg-success text-white p-3">
+                Responsive Column
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
