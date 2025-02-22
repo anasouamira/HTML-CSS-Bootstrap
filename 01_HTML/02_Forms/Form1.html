@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Form Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    </style>
 </head>
-
 <body>
-    <!-- Start of the form -->
-    <form action="#" method="post">
-        <!-- Search field -->
-        <input type="search" placeholder="Rechercher..."> <br>
 
-        <!-- Text input for last name -->
-        <label for="nom">Nom</label>
-        <input type="text" required name="nom" id="nom" maxlength="6"> <br>
+    <h1>Complete HTML Forms Example</h1><br>
 
-        <!-- Text input for first name -->
-        <label for="prenom">Prénom</label>
-        <input type="text" required placeholder="Votre prénom" name="prenom" id="prenom"> <br>
+    <!-- Basic Form -->
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
 
-        <!-- Date of birth input -->
-        <label for="date_naissance">Date de naissance</label>
-        <input type="date" name="date_naissance" id="date_naissance"> <br>
+            <!-- Text Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
 
-        <!-- Phone number input -->
-        <label for="telephone">Téléphone</label>
-        <input type="tel" name="telephone" id="telephone" pattern="\d{10}" placeholder="0612345678"> <br>
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-        <!-- Password input -->
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" id="password"> <br>
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
 
-        <!-- File upload input -->
-        <label for="photo">Photo</label>
-        <input type="file" name="photo" id="photo"> <br>
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </fieldset><br>
 
-        <!-- Range slider -->
-        <label for="taille">Taille (10 à 30)</label>
-        <input type="range" name="taille" id="taille" min="10" max="30"> <br>
+            <!-- Checkbox Input -->
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br>
 
-        <!-- Color picker -->
-        <label for="couleur">Couleur favorite</label>
-        <input type="color" name="couleur" id="couleur"> <br>
+            <!-- Dropdown Select -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+            </select><br>
 
-        <!-- Submit and reset buttons -->
-        <input type="submit" value="Envoyer">
-        <input type="reset" value="Réinitialiser"> <br>
+            <!-- Number Input -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100"><br>
 
-        <!-- Checkbox group for programming languages -->
-        <label>Langages préférés :</label> <br>
-        <input type="checkbox" name="langages[]" value="html" checked> HTML
-        <input type="checkbox" name="langages[]" value="python"> Python
-        <input type="checkbox" name="langages[]" value="javascript" checked> JavaScript
-        <input type="checkbox" name="langages[]" value="php"> PHP
-        <br>
+            <!-- Date Input -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
 
-        <!-- Radio buttons for gender -->
-        <label>Genre :</label> <br>
-        <input type="radio" name="genre" value="F" checked> Féminin
-        <input type="radio" name="genre" value="M"> Masculin
-        <br>
+            <!-- Time Input -->
+            <label for="appt">Appointment time:</label>
+            <input type="time" id="appt" name="appt"><br>
 
-        <!-- Textarea for description -->
-        <label for="description">Description :</label>
-        <textarea name="description" id="description" rows="4" cols="50">Texte de départ</textarea> <br>
+            <!-- File Upload -->
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file"><br>
 
-        <!-- Dropdown menu for city selection -->
-        <label for="ville">Ville :</label>
-        <select name="ville" id="ville">
-            <option value="khenifra">Khénifra</option>
-            <option value="rabat">Rabat</option>
-            <option value="casablanca">Casablanca</option>
-            <option value="marrakech">Marrakech</option>
-        </select> <br>
+            <!-- Color Input -->
+            <label for="color">Choose your color:</label>
+            <input type="color" id="color" name="color" value="#ff0000"><br>
 
-        <!-- Button with no form submission -->
-        <input type="button" value="Cliquez ici"> <br>
+            <!-- Range Input -->
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50"><br>
 
-        <!-- Number input with step value -->
-        <label for="quantite">Quantité (0 à 1000, par pas de 30)</label>
-        <input type="number" name="quantite" id="quantite" value="0" min="0" max="1000" step="30"> <br>
+            <!-- Tel Input -->
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone"><br>
 
-        <!-- Datalist for predefined options -->
-        <label for="niveau">Niveau :</label>
-        <input type="text" id="niveau" list="niveaux">
-        <datalist id="niveaux">
-            <option value="TS">
-            <option value="T">
-            <option value="Q">
-            <option value="S">
-        </datalist>
+            <!-- Search Input -->
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search"><br>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </fieldset>
     </form>
-    <!-- End of the form -->
-</body>
 
+</body>
 </html>
