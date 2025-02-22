@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cards</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--
+    
+### Explanation:
+
+1. Basic Card:
+   - `.card`: The container for the card.
+   - `.card-img-top`: The class for an image placed at the top of the card.
+   - `.card-body`: The section for content inside the card (e.g., title, text, button).
+
+2. Card Group:
+   - `.card-group`: A container that arranges multiple cards in a horizontal row.
+   - Each individual card can have its own content, like images and text.
+
+3. Card with Footer:
+   - `.card-footer`: A section placed at the bottom of the card, typically used for additional information.
+
+4. Card with Image Overlay:
+   - `.card-img-overlay`: Adds an overlay (text or other content) on top of an image in the card.
+    -->
+
+<div class="container mt-4">
+
+    <h2>Bootstrap Cards Example</h2>
+
+    <!-- Basic Card -->
+    <div class="container mt-4">
+
+        <h2>Bootstrap Cards Example</h2>
+    
+        <!-- Basic Card -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" class="card-img-top" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">This is a simple card example. Cards can contain various types of content, including images, text, and links.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    
+        <!-- Card Group -->
+        <h4 class="mt-4">Card Group</h4>
+        <div class="card-group">
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/lights.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">This is the first card in the group.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/lights.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">This is the second card in the group.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/lights.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">This is the third card in the group.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card with Footer -->
+        <h4 class="mt-4">Card with Footer</h4>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card with Footer</h5>
+                <p class="card-text">This card has a footer at the bottom.</p>
+            </div>
+            <div class="card-footer text-muted">
+                Footer Content
+            </div>
+        </div>
+    
+        <!-- Card with Image Overlay -->
+        <h4 class="mt-4">Card with Image Overlay</h4>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" class="card-img-top" alt="Card image">
+            <div class="card-img-overlay">
+                <h5 class="card-title text-white">Overlay Title</h5>
+                <p class="card-text text-white">This is an overlay text on top of the image.</p>
+            </div>
+        </div>
+    
+    </div>
+
+</div>
+
+<!-- Link Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
