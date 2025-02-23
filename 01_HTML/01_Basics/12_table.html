@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Examples</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Table</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+    </table>
+    
+    <h2>Table with Merged Cells</h2>
+    <table>
+        <tr>
+            <th colspan="2">Merged Header</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Merged Row</td>
+            <td>Cell 1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+    
+    <h2>Table with Thead, Tbody, and Tfoot</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$1500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$2500</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <h2>Table with Caption</h2>
+    <table>
+        <caption>Monthly Sales Report</caption>
+        <tr>
+            <th>Month</th>
+            <th>Sales</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$1000</td>
+        </tr>
+    </table>
+</body>
+</html>
