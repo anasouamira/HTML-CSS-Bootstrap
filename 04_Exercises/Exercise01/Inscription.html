@@ -1,34 +1,71 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insciption</title>
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <h1>Inscription</h1>
 
-    <form >
+    <form>
         <fieldset>
-            <label for="nom :">Nom</label>
-            <input type="text" name="nom" id ="nom" placeholder="nom">
-    
-            <label for="prénom :">Prénom</label>
-            <input type="text" name ="prénom" id="prénom" placeholder="prénom">
-
-            <label for="coureil :">Couriel</label>
-            <input type="email" name="email" id="email" placeholder="email">
-        </fieldset>
-
-        <fieldset>
-            <legend>Type d'études avant d'arriver à l'OFPPT :</legend>
-            <label for=""></label>
-
+            <legend>Informations personnelles</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Nom">
             
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            
+            <label for="email">Courriel :</label>
+            <input type="email" id="email" name="email" placeholder="Email">
         </fieldset>
 
+        <fieldset>
+            <legend>Type d'études avant d'arriver à l'OFPPT</legend>
+            <input type="radio" id="bac" name="etudes" value="Baccalauréat">
+            <label for="bac">Baccalauréat</label>
 
+            <input type="radio" id="bts" name="etudes" value="BTS">
+            <label for="bts">BTS</label>
+
+            <input type="radio" id="technicien" name="etudes" value="Technicien">
+            <label for="technicien">Technicien</label>
+
+            <input type="radio" id="faculte" name="etudes" value="Faculté">
+            <label for="faculte">Faculté</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Langage de programmation</legend>
+            <input type="checkbox" id="java" name="langage" value="Java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="javascript" name="langage" value="Javascript">
+            <label for="javascript">Javascript</label>
+
+            <input type="checkbox" id="python" name="langage" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="cpp" name="langage" value="C++">
+            <label for="cpp">C++</label>
+
+            <p>Indiquez d'autres langages que vous connaissez :</p>
+            <textarea rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Navigateur internet utilisé plus fréquemment :</legend>
+            <input type="text" id="navigateur" name="navigateur">
+        </fieldset>
+
+        <button type="submit">Envoyer</button>
+        <button type="reset">Recommencer</button>
     </form>
-    
+
 </body>
 </html>
+
 
