@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Linking Example</title>
+  
+  <!-- Linking CSS using <style> tag -->
+  <style>
+    /* Using the <style> tag */
+    body {
+      background-color: lightblue;
+    }
+    
+    .myClass {
+      color: green;
+      font-size: 18px;
+    }
+
+    #uniqueElement {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    p::before {
+      content: "Before text: ";
+      color: orange;
+    }
+
+    :root {
+      --main-color: #3498db;
+    }
+
+    div {
+      color: var(--main-color);
+    }
+  </style>
+  
+  <!-- Linking an external CSS file (if you have an external.css file) -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+  <!-- Linking CSS using the style attribute -->
+  <div style="padding: 20px; background-color: lightyellow;">
+    This is text inside a div with inline styling.
+  </div>
+
+  <!-- Linking using class -->
+  <div class="myClass">
+    This is text inside a div with class-based styling.
+  </div>
+
+  <!-- Linking using id -->
+  <div id="uniqueElement">
+    This is text inside a div with id-based styling.
+  </div>
+
+  <!-- A link element to show hover effect -->
+  <a href="#">Link to test hover effect</a>
+
+  <!-- A paragraph element to show content with ::before -->
+  <p>Text inside a p element to display ::before.</p>
+
+  <!-- Element using CSS variables -->
+  <div>Text with CSS variables</div>
+
+</body>
+</html>
