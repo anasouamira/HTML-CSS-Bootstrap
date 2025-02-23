@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire d'inscription</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Inscription</h1>
 
-    <form>
+    <form action="enregistrement.php" method="post">
+        
         <fieldset>
             <legend>Informations personnelles</legend>
             <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" placeholder="Nom">
-            
+            <input type="text" id="nom" name="nom" required>
+
             <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
-            
+            <input type="text" id="prenom" name="prenom" required>
+
             <label for="email">Courriel :</label>
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" id="email" name="email" required>
         </fieldset>
 
         <fieldset>
@@ -53,19 +54,25 @@
             <label for="cpp">C++</label>
 
             <p>Indiquez d'autres langages que vous connaissez :</p>
-            <textarea rows="4" cols="50"></textarea>
+            <textarea rows="4" cols="50" name="autres_langages"></textarea>
         </fieldset>
 
         <fieldset>
-            <legend>Navigateur internet utilisé plus fréquemment :</legend>
-            <input type="text" id="navigateur" name="navigateur">
+            <legend>Navigateur internet utilisé plus fréquemment</legend>
+            <label for="navigateur">Navigateur :</label>
+            <input list="navigateurs" id="navigateur" name="navigateur">
+            <datalist id="navigateurs">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
         </fieldset>
 
         <button type="submit">Envoyer</button>
         <button type="reset">Recommencer</button>
+        
     </form>
 
 </body>
 </html>
-
-

@@ -1,36 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+body{
+    font-family: Georgia, serif;
+}
+label{
+    color: blue;
 }
 
-h1 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+body{
+    padding: 50px;  /* Adds 50px of inner spacing */
+    background-color: #e8eae8;  /* Sets a light gray-green background color */
+    color: #5d665b; 
+}
+legend{
+    color: green;
+    text-transform: uppercase;
 }
 
-form {
-    width: 50%;
-    margin: auto;
+/* e. Le bouton d'envoi doit avoir une couleur de fond orange, faire 400px de large et l'écriture doit être en gras au centre du bouton. */
+button[type="submit"] {
+    background-color: orange;  /* Sets background color to orange */
+    width: 400px;  /* Makes the button 400px wide */
+    font-weight: bold;  /* Makes the text bold */
+    text-align: center;  /* Centers the text inside the button */
+    padding: 10px;  /* Adds padding for better appearance */
+    border: none;  /* Removes default borders */
+    cursor: pointer;
 }
 
-fieldset {
-    border: 1px solid black;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-legend {
-    font-weight: bold;
-}
-
-label {
-    margin-right: 10px;
-}
-
-input, textarea {
-    margin-bottom: 10px;
-    display: block;
-}
-
-button {
-    margin-top: 10px;
+/* f. L'input ayant le focus doit avoir un bord de 2px bleu. */
+input:focus {
+    border: 2px solid blue;
 }
