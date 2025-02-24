@@ -4,7 +4,7 @@
     justify-content: space-between; /* Distribute items with space between them */
     align-items: center; /* Center items vertically */
     flex-wrap: wrap; /* Allow items to wrap */
-    gap: 20px; /* Space between items */
+    gap: 40px; /* Space between items */
     height: 400px; /* Set height of container */
     border: 2px solid darkblue;
     padding: 20px;

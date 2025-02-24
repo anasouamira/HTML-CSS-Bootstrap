@@ -1,0 +1,112 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 100% ;
+}
+h1 {
+    font-size: 2em;
+    font-family: Helvetica, Arial, sans-serif;
+    background: aliceblue;
+    border-radius: 10px;padding: 10px;
+}
+h1::first-letter {
+    font-size: 2.2em;
+}
+nav
+{
+    background: gray;
+    border-radius: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+nav ul li a
+{
+    color: white;
+    margin: 0 5px;
+}
+nav ul li a:hover {
+    color: gray;
+    background-color: #007BFF;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    padding: 20px;
+
+}
+.row section
+{
+    display: flex;
+    gap: 20px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(110, 117, 180);
+    border-radius: 5px;
+    background-color: rgb(212, 215, 238);
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+p 
+{
+    text-align: center;
+}
+.row section article a
+{
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+article:hover {
+    cursor: pointer;
+}
+.connexion {
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.connexion form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connexion form input
+{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.connexion form  .button
+{
+    background:deepskyblue;
+}
+.connexion form p
+{
+    text-align: start;
+    font-size: 12px;
+    font-weight: bolder;
+}
+@media (max-width: 450px) {
+    nav, .row, .connexion {
+        display: block;
+    }
+    article p, article a {
+        display: none;
+    }
+}
