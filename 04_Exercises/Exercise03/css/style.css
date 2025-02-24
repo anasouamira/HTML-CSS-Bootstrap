@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header, footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.animation {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, grey, blue, grey);
+    position: relative;
+    overflow: hidden;
+}
+
+.animation::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    animation: move 3s infinite linear;
+}
+
+@keyframes move {
+    0% { left: 0; }
+    100% { left: 100%; }
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.left, .center, .right {
+    padding: 20px;
+}
+
+.left {
+    width: 20%;
+    background-color: grey;
+    color: blue;
+}
+
+.left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left li {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    width: 60%;
+    text-align: center;
+}
+
+.right {
+    width: 20%;
+    background-color: grey;
+    color: blue;
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right li {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    margin-right: 5px;
+}
+
+.right a {
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
