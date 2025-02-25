@@ -2,30 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- The charset specifies the character encoding for the document. UTF-8 supports most characters. -->
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This meta tag makes the web page responsive by adjusting its layout based on the screen size. -->
-
-    <title>Responsive Picture Example</title>
-    <!-- The <title> defines the title of the web page, which appears in the browser tab. -->
+    <title>HyperLink</title>
+    <style>
+        /* Adding a background color */
+        body {
+            background-color: lightgray; /* Light gray background */
+        }
+    </style>
 </head>
 <body>
-    <!-- Start of the picture element for responsive images -->
-    <picture>
-        <!-- This image is displayed for screens 1920px or wider -->
-        <source media="(min-width: 1920px)" srcset="ofppt.png">
-        
-        <!-- This image is displayed for screens between 1600px and 1919px -->
-        <source media="(min-width: 1600px)" srcset="ofppt.png">
-        
-        <!-- This image is displayed for screens between 600px and 1599px -->
-        <source media="(min-width: 600px)" srcset="ofppt.png">
-        
-        <!-- The fallback image is displayed if no media queries are matched -->
-        <img src="ofppt.png" alt="Responsive OFPPT logo">
-        <!-- The alt attribute improves accessibility and provides a description if the image cannot be loaded. -->
-    </picture>
-    <!-- End of the picture element -->
+
+    <!-- Simple hyperlink to "04 lists.html" -->
+    <a href="04 lists.html">Listes</a>
+
+    <!-- Hyperlink with an image as the clickable element -->
+    <a href="03 colors.html" target="_blank" title="Les listes">
+        <img src="ofppt.png" alt="OFPPT Logo" width="50">
+    </a>
+
+    <!-- Email link to open the default mail application -->
+    <a href="mailto:contact@ofppt.ma">Contact Us</a>
+
 </body>
 </html>
