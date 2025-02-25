@@ -1,68 +1,137 @@
-
-.navbar{
-    background-color: blue;
-    padding: 5px;
+/* ---- NAVIGATION BAR ---- */
+.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: green; /* Fond vert */
+    padding: 10px 20px;
+    font-family: "Courier New", Courier, monospace; /* Police */
 }
+
+.navbar img {
+    height: 50px; /* Ajuste la hauteur du logo */
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 24px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
+    gap: 20px; /* Espacement entre les liens */
 }
 
 .nav-links li {
     position: relative;
-    margin: 0 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    transition: 0.3s;
+    color: blue; /* Texte en bleu */
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-    background-color: #555;
-    border-radius: 5px;
+/* Effet actif */
+.nav-links a:active {
+    font-size: 14px;
+    color: blue;
 }
+
+/* ---- DROPDOWN MENU ---- */
 .dropdown-menu {
     display: none;
     position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
     top: 100%;
     left: 0;
-    background-color: #444;
-    list-style: none;
     min-width: 150px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-.dropdown-menu li {
-    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu a {
-    display: block;
-    padding: 10px;
-    color: white;
-}
-.dropdown-menu a:hover {
-    background-color: #666;
-}
-
-/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-header img{
-    width: 100px;
-    height: 100px;
+
+.dropdown-menu li {
+    padding: 5px 0;
 }
+
+.dropdown-menu a {
+    color: black;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: lightgray;
+}
+
+/* ---- RESPONSIVE NAVBAR ---- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Style du menu de navigation */
+.navbar {
+    background-color: green; /* Fond vert */
+    font-family: "Courier New", Courier, monospace; /* Police Courier New */
+}
+
+.navbar a {
+    color: blue; /* Texte en bleu */
+    text-decoration: none;
+}
+
+/* Effet lorsqu'un élément du menu est actif */
+.navbar a:active {
+    font-size: 14px; /* Augmente la taille */
+    color: blue; /* Change la couleur en bleu */
+}
+
+/* Effet au survol du lien "Se connecter" */
+.navbar a[href="connexion.html"]:hover {
+    border: 2px solid green; /* Bordure solid verte */
+    border-radius: 20px; /* Arrondi de 20px */
+    background-color: blue; /* Fond bleu */
+    color: white; /* Texte blanc */
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* Animation "coloriage" */
+@keyframes coloriage {
+    0% {
+        color: white;
+        background-color: blue;
+        border: 2px dotted black;
+    }
+    100% {
+        color: black;
+        background-color: green;
+        border: 2px dotted black;
+    }
+}
+
+/* Appliquer l'animation aux liens "Prendre RDV" et "Imprimer invitation" */
+ul li a[href="rendez-vous.html"],
+ul li a[href="impression.html"] {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    animation: coloriage 4s ease infinite; /* Animation continue */
+}
+
