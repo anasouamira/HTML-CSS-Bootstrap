@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
-    <title>CSS Navbar Example</title>
+    
+    <title>CSS Navbar with Dropdown</title>
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <nav class="navbar">
+        <!-- Logo -->
         <a href="#" class="logo">MyLogo</a>
+
+        <!-- Navigation Links -->
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+
+            <!-- Dropdown Menu for Services -->
+            <li class="dropdown">
+                <a href="#">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
