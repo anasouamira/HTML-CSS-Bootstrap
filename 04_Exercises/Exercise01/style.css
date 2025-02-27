@@ -16,7 +16,7 @@ legend{
 }
 
 /* e. Le bouton d'envoi doit avoir une couleur de fond orange, faire 400px de large et l'écriture doit être en gras au centre du bouton. */
-button[type="submit"] {
+button[type="submit"]{
     background-color: orange;  /* Sets background color to orange */
     width: 400px;  /* Makes the button 400px wide */
     font-weight: bold;  /* Makes the text bold */
